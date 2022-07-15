@@ -18,14 +18,16 @@ public class BikeTest {
     @Test
     public void testIfBikeIsOn(){
         //when bike is off
-        gearSpeed.setOn(true);
+        gearSpeed.setOff();
+        gearSpeed.setOn();
         //check if bike is on/off
         assertTrue(gearSpeed.getOn());
     }
     @Test
     public void testIfBikeIsOff(){
         //when bike is off
-        gearSpeed.setOff(true);
+        gearSpeed.setOn();
+        gearSpeed.setOff();
         // check if bike is on/off
         assertTrue(gearSpeed.getOff());
     }
@@ -44,42 +46,25 @@ public class BikeTest {
     }
     @Test
     public void testGearDecrease(){
+        gearSpeed.increaseGear();
+        gearSpeed.increaseGear();
+        gearSpeed.increaseGear();
+        gearSpeed.increaseGear();
         //when gear is decreased
         gearSpeed.decreaseGear();
         //check gear state
-        assertEquals(0, gearSpeed.getGear());
+        assertEquals(3, gearSpeed.getGear());
     }
 
 
     @Test
     public void testSpeedWhileGearIncreases(){
         gearSpeed.increaseGear();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.accelerate();
-        gearSpeed.increaseGear();
-        gearSpeed.accelerate();
 
-        assertEquals(2,gearSpeed.getGear());
-        assertEquals(24,gearSpeed.accelerate());
+
+
+        assertEquals(1,gearSpeed.getGear());
+        assertEquals(0,gearSpeed.accelerate());
     }
 
 

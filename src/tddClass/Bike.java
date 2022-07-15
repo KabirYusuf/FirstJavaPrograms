@@ -6,14 +6,14 @@ public class Bike {
     private int gear = 0;
     private int speed = -1;
 
-    public void setOn(boolean on){
-        isOn = on;
+    public void setOn(){
+        isOn = true;
     }
     public boolean getOn(){
         return isOn;
     }
-    public void setOff(boolean off){
-        isOff = off;
+    public void setOff(){
+        isOff = true;
     }
     public boolean getOff(){
         return isOff;
@@ -30,26 +30,75 @@ public class Bike {
             gear = 0;
         }
     }
-    public void gearBelowZero(){
-        if(gear < 0){
-            gear = 0;
-        }
-    }
-    public void gearBeyondFour(){
-        if(gear > 4) {
-            gear = 4;
-        }
-    }
+//    public void gearBelowZero(){
+//        if(gear < 0){
+//            gear = 0;
+//        }
+//    }
+//    public void gearBeyondFour(){
+//        if(gear > 4) {
+//            gear = 4;
+//        }
+//    }
     public int getGear() {
         return gear;
 
     }
 
+    public int accelerateOnGearZero(){
+        speed = 0;
+        return speed;
+    }
+    public int accelerateOnGearOne(){
+        speed++;
+        return speed;
+    }
+    public int accelerateOnGearTwo(){
+        speed = speed + 2;
+        return speed;
+    }
+    public int accelerateOnGearThree(){
+        speed = speed + 3;
+        return speed;
+    }
+    public int accelerateOnGearFour(){
+        speed = speed + 4;
+        return speed;
+    }
+
+    public int decelerate(){
+        speed--;
+        return speed;
+    }
+    public int decelerateOnGearZero(){
+        speed = 0;
+        return speed;
+    }
+    public int decelerateOnGearOne(){
+        speed--;
+        return speed;
+    }
+    public int decelerateOnGearTwo(){
+        speed = speed - 2;
+        return speed;
+    }
+    public int decelerateOnGearThree(){
+        speed = speed - 3;
+        return speed;
+    }
+    public int decelerateOnGearFour(){
+        speed = speed - 4;
+        return speed;
+    }
+
+
+
+
     public int accelerate(){
         if(gear == 1) {
             speed = speed + 1;
             if(speed > 20 && gear == 1){
-                speed = 20;
+                gear = gear + 1 ;
             }
         }
         else if (gear == 2) {
@@ -66,6 +115,7 @@ public class Bike {
         }
         return speed;
     }
+
     
 //    public int setSpeed(){
 //        if(speed >= 0 && speed <= 20){

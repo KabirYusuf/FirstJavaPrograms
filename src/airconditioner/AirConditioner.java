@@ -7,40 +7,68 @@ public class AirConditioner {
    private int temperature = 16;
 
 
-    public void setOn(boolean on) {
-        isOn = on;
-    }
-
-    public boolean getOn() {
+    public boolean setOn() {
+        int power = 1;
+        if(power == 1){
+            isOn = true;
+            System.out.println("Ac is on");
+        }
+        if(power == 0) {
+            isOn = false;
+            System.out.print("Ac is off");
+        }
         return isOn;
     }
-
-
-    public void setOff(boolean off) {
-        isOff = off;
-    }
-
-    public boolean getOff() {
+    public boolean setOff() {
+        int power = 0;
+        if(power == 0){
+            isOff = true;
+            System.out.println("Ac is off");
+        }
+        if(power == 1){
+            isOff = false;
+        }
         return isOff;
     }
 
+
+
+
+
     public void increaseTemperature(){
-        temperature = temperature + 1;
-    }
-    public void setTemperatureBeyondThirty(){
-        if(temperature > 30){
-            temperature = 30;
+        int num = 1;
+        if(isOn == true){
+            for (int tempIncr = 0; tempIncr < 10; tempIncr++){
+                temperature += num;
+                if(temperature > 30){
+                    temperature = 30;
+                    System.out.println("Temperature cant exceed 30");
+                }
+            }
+            System.out.println("Temperature at"+" "+ temperature);
         }
-    }
-    public void decreaseTemperature() {
-        temperature = temperature - 1;
+
+        else {
+            System.out.println("Put on Ac");
+        }
     }
 
-    public void setTemperatureBelowSixteen(){
-        if(temperature < 16){
-            temperature = 16;
+    public void decreaseTemperature() {
+        int num = 1;
+        if(isOn == true){
+            for (int tempDecr = 0; tempDecr < 10 ; tempDecr++){
+                temperature -= num;
+                System.out.println("Temperature at"+" "+ temperature);
+                if(temperature < 16){
+                    temperature = 16;
+                    System.out.println("Minimum Temperature is 16");
+                }
+            }
         }
+
     }
+
+
 
     public int getTemperature() {
         return temperature;

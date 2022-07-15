@@ -13,9 +13,7 @@ class AirConditionerTest {
         //given that
         AirConditioner sony = new AirConditioner();
         //when
-        sony.setOn(true);
-        //check
-        assertTrue(sony.getOn());
+        sony.setOn();
     }
 
     @Test
@@ -24,9 +22,8 @@ class AirConditionerTest {
         //given that
         AirConditioner sony = new AirConditioner();
         //when
-        sony.setOff(true);
+        sony.setOff();
         //check
-        assertTrue(sony.getOff());
     }
 
     @Test
@@ -34,21 +31,11 @@ class AirConditionerTest {
     public void forIncreaseTemperature(){
         //given that
         AirConditioner sony = new AirConditioner();
-        //when
+        sony.setOn();
         sony.increaseTemperature();
         sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
-        sony.increaseTemperature();
+
+
         //check
         assertEquals(30, sony.getTemperature());
     }
@@ -59,13 +46,13 @@ class AirConditionerTest {
         //given that
         AirConditioner sony = new AirConditioner();
         //when
-        sony.increaseTemperature();
-        sony.increaseTemperature();
+        sony.setOn();
         sony.increaseTemperature();
         sony.decreaseTemperature();
-        sony.decreaseTemperature();
+
+
         //check
-        assertEquals(17, sony.getTemperature());
+        assertEquals(20, sony.getTemperature());
     }
 
     @Test
@@ -82,7 +69,7 @@ class AirConditionerTest {
         sony.decreaseTemperature();
         sony.decreaseTemperature();
         sony.decreaseTemperature();
-        sony.setTemperatureBelowSixteen();
+
         //check
         assertEquals(16, sony.getTemperature());
     }
@@ -107,7 +94,7 @@ class AirConditionerTest {
         sony.increaseTemperature();
         sony.increaseTemperature();
         sony.increaseTemperature();
-        sony.setTemperatureBeyondThirty();
+
         //check
         assertEquals( 30,sony.getTemperature());
     }
