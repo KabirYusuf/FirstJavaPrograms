@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class Segment {
 
-    private static int[][] fill = new int[5][4];
+    private static final int[][] fill = new int[5][4];
 
 
     public static void main(String[] args) throws InterruptedException, IllegalAccessException {
+
+        //myInput(1,0,1,1,1,0,1);
         inputValue("0110110");
         display();
 
@@ -117,6 +119,30 @@ public class Segment {
             }
         }
 
+    }
+
+    static  void myInput(int one, int two, int three, int four, int five, int six, int seven) throws InterruptedException {
+        if(one == 1){
+            fillA();
+        }
+        if(two == 1){
+            fillB();
+        }
+        if(three == 1){
+            fillC();
+        }
+        if(four == 1){
+            fillD();
+        }
+        if(five == 1){
+            fillE();
+        }
+        if(six == 1){
+            fillF();
+        }
+        if(seven == 1){
+            fillG();
+        }
     }
 
 }
