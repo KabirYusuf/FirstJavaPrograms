@@ -1,5 +1,7 @@
 package classExercise.DataStructure;
 
+import java.util.Objects;
+
 public class ArrayList implements List{
 
     private boolean isEmpty = true;
@@ -31,13 +33,11 @@ public class ArrayList implements List{
     }
 
     @Override
-    public void add(String item, int id) {
-
-    }
-
-    @Override
-    public void clear() {
-
+    public void clear(){
+        for (int i = 0; i < elements.length; i++) {
+            elements[i] = null;
+            count = 0;
+        }
     }
 
     @Override
@@ -52,6 +52,11 @@ public class ArrayList implements List{
 
     @Override
     public boolean contains(String anotherItem) {
+        for (int i = 0; i < elements.length; i++) {
+            if(Objects.equals(elements[i], anotherItem)){
+                return true;
+            }
+        }
         return false;
     }
 }

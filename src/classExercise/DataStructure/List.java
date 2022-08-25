@@ -5,7 +5,7 @@ public interface List {
     void remove(int id);
     void remove(String item);
     String get(int id);
-    void add(String item, int id);
+
     void clear();
     int size();
     boolean isEmpty();
