@@ -1,4 +1,4 @@
-package Assignment.AirCondition;
+package assignment.airCondition;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

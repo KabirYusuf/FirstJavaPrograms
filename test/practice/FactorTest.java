@@ -1,8 +1,8 @@
-package Practice;
+package practice;
 
 import org.junit.jupiter.api.Test;
 
-import static Practice.Factor.factor;
+import static practice.Factor.factor;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FactorTest {

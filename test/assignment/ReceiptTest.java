@@ -1,4 +1,4 @@
-package Assignment;
+package assignment;
 
 import com.google.common.base.Objects;
 

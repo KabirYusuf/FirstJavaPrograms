@@ -1,6 +1,5 @@
-package Assignment.Bike;
+package assignment.bike;
 
-import Assignment.Bike.Bike;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

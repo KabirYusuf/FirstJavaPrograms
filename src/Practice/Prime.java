@@ -1,4 +1,4 @@
-package Practice;
+package practice;
 
 public class Prime {
     public static void main(String[] args) {

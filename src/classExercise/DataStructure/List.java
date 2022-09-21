@@ -1,4 +1,4 @@
-package classExercise.DataStructure;
+package classExercise.dataStructure;
 
 public interface List {
     void add(String item);

@@ -1,4 +1,4 @@
-package Assignment;
+package assignment;
 
 public class Kata {
     public int add(int firstNumber, int secondNumber){

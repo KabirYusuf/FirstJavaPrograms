@@ -1,6 +1,4 @@
-package Practice;
-
-import java.util.Arrays;
+package practice;
 
 public class ArraySorting {
     public static void main(String[] args) {

@@ -1,6 +1,5 @@
-package classExercise.Bank;
+package classExercise.bank;
 
-import classExercise.Bank.Account;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

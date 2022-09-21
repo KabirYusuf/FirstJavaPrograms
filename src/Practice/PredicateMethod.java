@@ -1,6 +1,5 @@
-package Practice;
+package practice;
 
-import java.util.Date;
 import java.util.Scanner;
 
 public class PredicateMethod {

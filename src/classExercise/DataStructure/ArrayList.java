@@ -1,4 +1,4 @@
-package classExercise.DataStructure;
+package classExercise.dataStructure;
 
 import java.util.Objects;
 

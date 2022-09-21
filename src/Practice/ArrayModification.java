@@ -1,4 +1,4 @@
-package Practice;
+package practice;
 
 public class ArrayModification {
     private static int [] array = new int [6];

@@ -1,4 +1,4 @@
-package Assignment.AirCondition;
+package assignment.airCondition;
 
 public class AirCondition {
     private boolean isOn;

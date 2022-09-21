@@ -1,4 +1,4 @@
-package classExercise.AnimalProject;
+package classExercise.animalProject;
 
 public class Animal {
     private String name;

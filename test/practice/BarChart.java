@@ -1,4 +1,4 @@
-package Practice;
+package practice;
 
 public class BarChart {
     public static void main(String[] args) {

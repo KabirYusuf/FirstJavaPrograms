@@ -1,6 +1,4 @@
-package Assignment;
-
-import java.util.Scanner;
+package assignment;
 
 public class Segment {
 

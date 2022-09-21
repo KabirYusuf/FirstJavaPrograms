@@ -1,4 +1,4 @@
-package classExercise.AnimalProject;
+package classExercise.animalProject;
 
 import java.util.Objects;
 

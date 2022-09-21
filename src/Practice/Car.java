@@ -1,4 +1,4 @@
-package Practice;
+package practice;
 
 public class Car {
     private  String model;

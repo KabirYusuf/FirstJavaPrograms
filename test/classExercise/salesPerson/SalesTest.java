@@ -1,7 +1,5 @@
-package classExercise.SalesPerson;
+package classExercise.salesPerson;
 
-import classExercise.SalesPerson.Item;
-import classExercise.SalesPerson.SalesPerson;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

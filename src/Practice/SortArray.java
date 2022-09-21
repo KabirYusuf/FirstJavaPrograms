@@ -1,4 +1,4 @@
-package Practice;
+package practice;
 
 import java.security.SecureRandom;
 import java.util.Arrays;

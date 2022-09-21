@@ -1,4 +1,4 @@
-package Practice.AuntyFunmi;
+package practice.auntyFunmi;
 
 import java.util.ArrayList;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package Practice;
+package practice;
 
 public class ArrayMaxAndMinNumber {
     public static void main(String[] args) {

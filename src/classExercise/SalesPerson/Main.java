@@ -1,4 +1,4 @@
-package classExercise.SalesPerson;
+package classExercise.salesPerson;
 
 import java.util.Arrays;
 import java.util.Scanner;

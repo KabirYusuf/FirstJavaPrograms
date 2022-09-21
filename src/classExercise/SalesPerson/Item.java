@@ -1,4 +1,4 @@
-package classExercise.SalesPerson;
+package classExercise.salesPerson;
 
 public class Item {
 

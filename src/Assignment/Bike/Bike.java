@@ -1,4 +1,4 @@
-package Assignment.Bike;
+package assignment.bike;
 
 public class Bike {
     private boolean isOn;

@@ -1,7 +1,7 @@
 package tddClass;
 
-import classExercise.DataStructure.ArrayList;
-import classExercise.DataStructure.List;
+import classExercise.dataStructure.ArrayList;
+import classExercise.dataStructure.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

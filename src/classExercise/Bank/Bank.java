@@ -1,4 +1,4 @@
-package classExercise.Bank;
+package classExercise.bank;
 
 import java.util.ArrayList;
 

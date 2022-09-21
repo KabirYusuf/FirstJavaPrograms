@@ -1,4 +1,4 @@
-package classExercise.AnimalProject;
+package classExercise.animalProject;
 
 public class LandAnimal extends Animal{
     public LandAnimal(String name, String colour, String age, String height) {

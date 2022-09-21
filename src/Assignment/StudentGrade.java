@@ -1,8 +1,6 @@
-package Assignment;
+package assignment;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 import java.util.Scanner;
 
 public class StudentGrade {

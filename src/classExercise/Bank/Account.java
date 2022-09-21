@@ -1,4 +1,4 @@
-package classExercise.Bank;
+package classExercise.bank;
 
 public class Account {
     private int balance;
