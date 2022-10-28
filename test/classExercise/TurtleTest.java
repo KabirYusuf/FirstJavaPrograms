@@ -1,5 +1,7 @@
 package classExercise;
 
+import classExercise.turtle.PenPosition;
+import classExercise.turtle.Turtle;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,8 +16,8 @@ public class TurtleTest {
     @Test
     public void turtleHasPen(){
         assertNotNull(ijapa);
-        assertEquals(0, ijapa.getxCoordinate());
-        assertEquals(0, ijapa.getyCoordinate());
+        assertEquals(0, ijapa.getXCoordinate());
+        assertEquals(0, ijapa.getYCoordinate());
         assertNotNull(ijapa.getTurtlePen());
     }
 
@@ -30,7 +32,7 @@ public class TurtleTest {
     public void moveForward(){
         turtlePenIsUp();
         ijapa.moveForward(9);
-        assertEquals(0, ijapa.getyCoordinate());
-        assertEquals(8, ijapa.getxCoordinate());
+        assertEquals(0, ijapa.getYCoordinate());
+        assertEquals(8, ijapa.getXCoordinate());
     }
 }

@@ -36,11 +36,6 @@ public class FlyingAnimal extends Animal{
         move(5);
     }
 
-//    @Override
-//    public void move(int speed){
-//        System.out.println("Flying animal movement");
-//    }
-
 
     @Override
     public String toString(){

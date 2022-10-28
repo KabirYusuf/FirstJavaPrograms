@@ -1,6 +1,7 @@
 package classExercise;
 
 //import com.uncornWimps.store.StoreCustomer;
+import classExercise.storeCustomer.StoreCustomer;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 

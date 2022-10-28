@@ -1,5 +1,6 @@
 package classExercise;
 
+import classExercise.ticket.Ticket;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;

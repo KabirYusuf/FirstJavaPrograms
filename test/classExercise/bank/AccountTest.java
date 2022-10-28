@@ -15,15 +15,6 @@ class AccountTest {
         bankeAccount = new Account("banke", "0023458", "1234");
     }
 
-//    @Test
-//    public void accountCanBeCreatedTest(){
-//        //given that account exists
-//        //check that account exists
-//        //check that balance is zero
-//        Account account = new Account();
-//        assertNotNull(account);
-//        assertEquals(0, account.getBalance());
-//    }
 
 
 
@@ -50,10 +41,7 @@ class AccountTest {
         assertEquals(0, bankeAccount.getBalance("1234"));
         bankeAccount.deposit(-2500);
         assertEquals(0, bankeAccount.getBalance("1234"));
-//        bankeAccount.deposit(5000);
-//        assertEquals(5000, bankeAccount.getBalance("1234"));
-//        bankeAccount.deposit(2000);
-//        assertEquals(7000,bankeAccount.getBalance("1234"));
+
     }
     @Test
     @DisplayName("Getting balance with invalid pin returns")

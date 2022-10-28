@@ -4,14 +4,10 @@ import java.util.ArrayList;
 
 public class Bank{
     private int numberOfCustomer = 10100;
-    //private Account[] accounts = new Account[10];
     ArrayList<Account>accounts = new ArrayList<>();
 
     public void createAccountFor(String accountName, String pin) {
 
-//        Account account = new Account((numberOfCustomer+1)+ "", accountName, pin);
-//        accounts[numberOfCustomer] = account;
-//        numberOfCustomer++;
         accounts.add(new Account((numberOfCustomer+1)+"", accountName,pin));
         System.out.println("your account number is " + (numberOfCustomer+1) + "");
         numberOfCustomer++;
@@ -58,8 +54,6 @@ public class Bank{
 
     public void transfer(int amount, String pin, String sourceAccountNumber, String destinationAccountNumber){
        Account account = findAccount(sourceAccountNumber);
-       //account = findAccount(destinationAccountNumber);
-       //account.transfer(amount, pin, sourceAccountNumber, destinationAccountNumber);
        account.transferFrom(amount, sourceAccountNumber, pin);
        boolean isValidAmount = account.getBalance(pin) >= amount;
        if(isValidAmount){
