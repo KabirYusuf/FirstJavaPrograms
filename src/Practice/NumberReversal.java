@@ -20,13 +20,13 @@ public class NumberReversal {
         }
         return reversal;
     }
-//    public static int numberReversal(int number){
-//        int numberReverse = 0;
-//        while (number != 0){
-//            numberReverse = numberReverse * 10;
-//            numberReverse += number % 10;
-//            number = number / 10;
-//        }
-//        return numberReverse;
-//    }
+    public static int numberReversal(int number){
+        int numberReverse = 0;
+        while (number != 0){
+            numberReverse = numberReverse * 10;
+            numberReverse += number % 10;
+            number = number / 10;
+        }
+        return numberReverse;
+    }
 }

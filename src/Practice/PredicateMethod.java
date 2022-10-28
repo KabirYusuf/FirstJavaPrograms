@@ -9,7 +9,7 @@ public class PredicateMethod {
         System.out.print("Enter 1 if you are a native and any other number if you are not: ");
         int nativeNumber = input.nextInt();
         setNativeNumber(nativeNumber);
-        if(isAnative() == true){
+        if(isAnative()){
             System.out.println("Enter cohort number: ");
             int cohortNumber = input.nextInt();
             if((cohortNumber == 9) || (cohortNumber == 12)){

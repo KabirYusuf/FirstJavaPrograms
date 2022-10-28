@@ -3,8 +3,8 @@ package practice;
 public class ArraySorting {
     public static void main(String[] args) {
         int [] array = {3,4,6,7,1,9,5,11,15,13,8,2,10,12,14};
-        //ascendingArray(array);
-        //decendingArray(array);
+        ascendingArray(array);
+        decendingArray(array);
         shuffleArray(array);
 
 

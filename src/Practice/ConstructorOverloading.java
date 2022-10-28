@@ -31,9 +31,6 @@ public class ConstructorOverloading {
         ConstructorOverloading me = new ConstructorOverloading("Abu","2727","jibowu");
 
 
-//        jay.setName("Buhari");
-//        bebe.setName("James");
-
         System.out.println(jay.getName());
         System.out.println(bebe.getName());
         System.out.println(me.getName());

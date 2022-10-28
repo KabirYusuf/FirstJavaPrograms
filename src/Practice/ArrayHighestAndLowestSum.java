@@ -6,7 +6,7 @@ public class ArrayHighestAndLowestSum {
 
     public static void main(String[] args) {
         int [] array = {2,3,1,5,4};
-        //getHighestAddedValue(array);
+        getHighestAddedValue(array);
         ArrayMaxAndMinNumber.arrayMaxMinNumber(getHighestAddedValue(array));
     }
 

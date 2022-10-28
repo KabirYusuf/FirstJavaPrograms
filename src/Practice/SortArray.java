@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class SortArray {
     public static void main(String[] args) {
         int [] array = {7,2,4,3,6,60,};
-        //sortedArray(array);
+        sortedArray(array);
         System.out.println();
         sortedArrayRandom(array);
     }

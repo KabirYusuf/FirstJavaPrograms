@@ -4,7 +4,7 @@ public class ArrayMaxAndMinNumber {
     public static void main(String[] args) {
         int [] array = {20,-10,1,50,8,3};
         arrayMaxMinNumber(array);
-//        arrayMin(array);
+        arrayMin(array);
     }
 
     public static void arrayMaxMinNumber(int [] array){
@@ -27,14 +27,14 @@ public class ArrayMaxAndMinNumber {
 
     }
 
-//    public static void arrayMin(int [] array){
-//        int min = 0;
-//        for (int i = 0; i < array.length; i++) {
-//            if(array[i] < min){
-//                min = array[i];
-//            }
-//        }
-//        System.out.println(min);
-//
-//    }
+    public static void arrayMin(int [] array){
+        int min = 0;
+        for (int i = 0; i < array.length; i++) {
+            if(array[i] < min){
+                min = array[i];
+            }
+        }
+        System.out.println(min);
+
+    }
 }
